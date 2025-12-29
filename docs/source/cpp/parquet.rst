@@ -261,7 +261,7 @@ To configure how Parquet files are written, use the :class:`WriterProperties::Bu
       .build();
 
 The ``max_row_group_length`` sets an upper bound on the number of rows per row
-group that takes precedent over the ``chunk_size`` passed in the write methods.
+group that takes precedence over the ``chunk_size`` passed in the write methods.
 
 You can set the version of Parquet to write with ``version``, which determines
 which logical types are available. In addition, you can set the data page version
