@@ -310,7 +310,7 @@ def test_date():
 
 
 def test_date_cast():
-    # ARROW-10472 - casting fo scalars doesn't segfault
+    # ARROW-10472 - casting of scalars doesn't segfault
     scalar = pa.scalar(datetime.datetime(2012, 1, 1), type=pa.timestamp("us"))
     expected = datetime.date(2012, 1, 1)
     for ty in [pa.date32(), pa.date64()]:
