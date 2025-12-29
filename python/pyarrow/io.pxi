@@ -2776,7 +2776,7 @@ def input_stream(source, compression='detect', buffer_size=None):
     ...
     b'some data'
 
-    Create a readable PythonFile (NativeFile) from a a Python file object:
+    Create a readable PythonFile (NativeFile) from a Python file object:
 
     >>> with open('example.txt', mode='w') as f:
     ...     f.write('some text')
