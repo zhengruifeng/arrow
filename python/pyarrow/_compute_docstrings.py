@@ -87,6 +87,11 @@ function_doc_additions["min"] = """
     >>> arr4 = pa.array(["z", None, "y", "x"])
     >>> pc.min(arr4)
     <pyarrow.StringScalar: 'x'>
+
+    See Also
+    --------
+    pyarrow.compute.max
+    pyarrow.compute.min_max
     """
 
 function_doc_additions["max"] = """
@@ -121,6 +126,11 @@ function_doc_additions["max"] = """
     >>> arr4 = pa.array(["z", None, "y", "x"])
     >>> pc.max(arr4)
     <pyarrow.StringScalar: 'z'>
+
+    See Also
+    --------
+    pyarrow.compute.min
+    pyarrow.compute.min_max
     """
 
 function_doc_additions["min_max"] = """
@@ -155,4 +165,9 @@ function_doc_additions["min_max"] = """
     >>> arr4 = pa.array(["z", None, "y", "x"])
     >>> pc.min_max(arr4)
     <pyarrow.StructScalar: [('min', 'x'), ('max', 'z')]>
+
+    See Also
+    --------
+    pyarrow.compute.max
+    pyarrow.compute.min
     """
